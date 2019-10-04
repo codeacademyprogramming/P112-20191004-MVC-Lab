@@ -1,0 +1,14 @@
+﻿@model List<WebApplication1.Models.News>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Xəbərlər</h2>
+
+<ul>
+    @foreach (var xeber in Model)
+    {
+        <li>@xeber.Title</li>
+
+    }
+</ul>
